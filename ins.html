@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperSuper</title>
+    <link rel="stylesheet" href="ins.css">
+    <script src="ins.js"></script>
+</head>
+<body>
+    <div id="container">
+       
+        <form action="process.php" method="POST" onsubmit="return validate()">
+            <span>Subscribe now</span>
+            <input type="text" placeholder="Name" id="name" name="name">
+            <input type="email" placeholder="Email" id="email" name="email">
+            <span>Select a ticket</span>
+            <select id="ticket" name="ticket">
+                <option value=""></option>
+                <option value="standard">Standard</option>
+                <option value="vip">VIP</option>
+                <option value="vvip">VVIP</option>
+            </select>
+            <input type="submit" id="button">
+        </form>
+    </div>
+</body>
+</html>
